@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta
+            charset="UTF-8"
+            name="description"
+            content="Exercise for Thinkful bootcamp lesson 6"
+        />
+        <title>AngalogSea Signup</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
+        />
+    </head>
+    <body>
+        <img class="main-logo" src="static/images/logo.png" />
+        <form role="form" action="/signup/" method="post" class="signup-form">
+            <fieldset>
+                <legend>Sign up</legend>
+                <label for="user-email">Email</label>
+                <input
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="john@test.com"
+                    required
+                />
+                <label for="user-pass">Password</label>
+                <input
+                    type="password"
+                    name="user-pass"
+                    id="user-pass"
+                    placeholder="Your password"
+                />
+                <button type="submit">Sign up</button>
+            </fieldset>
+        </form>
+        <footer role="contentinfo" class="footer">
+            <p>Already have an account??? <a href="/login">Login here</a></p>
+        </footer>
+    </body>
+</html>
